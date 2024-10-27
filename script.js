@@ -12,7 +12,7 @@ function updateClock() {
   // Display the formatted time
   document.getElementById("clock").textContent = `${newHours}:${newMinutes}:${newSeconds}`;
 }
-
+// js 
 // Update the clock every second
 updateClock();
 setInterval(updateClock, 1000); 
