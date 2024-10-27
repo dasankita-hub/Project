@@ -1,0 +1,57 @@
+body {
+  background-color: #1e1e1e; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s; 
+  /* background-image: url("a6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+*/
+  
+
+}
+.heading {
+  color: #00ffff; 
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added */
+}
+
+
+.clock-container {
+  background-color: #333;
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+
+#clock {
+  font-size: 50px;
+  color: #00ff00; /* Neon green */
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; 
+  transition: color 0.5s ease-in-out; /* Added */
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.clock-container:hover {
+  background-color: #444; 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); 
+}
